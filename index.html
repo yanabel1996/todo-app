@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title">Your daily ToDo List</h1>
+    </header>
+
+    <main>
+        <form id="form" class="form" autocomplete="off">
+            <label>
+                <input id="new-todo" class="form__input" name="todo" type="text" placeholder="New todo" />
+            </label>
+            <select class="form__select" id="user-todo" name="user">
+                <option disabled selected>Select user</option>
+            </select>
+            <button class="form__button">Add Todo</button>
+        </form>
+        <ul class="list" id="todo-list"></ul>
+    </main>
+
+    <footer class="footer">
+        <div class="github">
+            <p>Created by <b>Iana Belousova</b></p>
+            <a href="https://github.com/yanabel1996">
+                <img class="github__img" src="./src/github.png" alt="GitHub">
+            </a>
+
+        </div>
+        <div class="copy">© 2023 Belolusova Iana</div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
